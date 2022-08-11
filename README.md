@@ -3,7 +3,7 @@ In this repository I will put some of my freelancer's programs
 
 Python:
 https://github.com/matheuscr27/Profissional/tree/master/python
-(Work with datas get with  GetDFPData)
+(Some trader program projects in Python program)
 
 R:
 https://github.com/matheuscr27/Profissional/tree/master/investimentos_orama
