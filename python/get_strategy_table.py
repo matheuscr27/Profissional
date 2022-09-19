@@ -44,9 +44,7 @@ my_carteira = carteira.carteira()
 
 if __name__ == '__main__':
     import MetaTrader5 as mt5
-    if not mt5.initialize(login=90404218, password="MThs@&04@@", server="OramaDTVM-Server" ):
-        print("initialize() failed, error code =", mt5.last_error())
-        quit()
+    
     parameters = {'number_of_samples': 50000,
     'sample_size' : 5,
     'break_data_from_now_to': 1000,
