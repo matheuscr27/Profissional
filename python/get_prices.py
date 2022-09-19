@@ -15,9 +15,6 @@ def get_prices(list_symbols,utc_from, utc_to ):
 
     dict_df = {}
 
-#    if not mt5.initialize(login=90404218, password="MThs@&04@@", server="OramaDTVM-Server" ):
-#        print("initialize() failed, error code =", mt5.last_error())
-#        quit()
 
     for symbol in list_symbols:
         #print(symbol)
@@ -79,10 +76,6 @@ test =pd.to_datetime(pd.DataFrame({'year':[2002],'month':[6],'day':[23]}))[0]
 utc_to = pd.to_datetime(pd.DataFrame({'year':[2019],'month':[12],'day':[25]}))[0]
 if __name__ == '__main__':
     import MetaTrader5 as mt5
-    if not mt5.initialize(login=90404218, password="MThs@&04@@", server="OramaDTVM-Server" ):
-
-        print("initialize() failed, error code =", mt5.last_error())
-        quit()
 
     my_dict = get_prices(['OIBR3', 'CPLE3'],datetime.now() - 3*pd.tseries.offsets.Day(), datetime.now())
     #my_filter_dict = get_prices_filter_by_date(my_dict,test,utc_to )
