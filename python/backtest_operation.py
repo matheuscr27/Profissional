@@ -5,11 +5,6 @@ import sql_functions
 import mysql.connector
 
 initialize_mt.initialize_mt5()
-#if __name__ == '__main__':
-#    import MetaTrader5 as mt5
-#    if not mt5.initialize(login=90404218, password="MThs@&04@@", server="OramaDTVM-Server" ):
-#        print("initialize() failed, error code =", mt5.last_error())
-#        quit()
 
 host_name = 'localhost'
 user_name = 'root'
